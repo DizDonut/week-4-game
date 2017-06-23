@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Crystals Collector!</title>
+    <!-- jquary library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+    <link rel="stylesheet" href="assets/css/reset.css">
+  <body>
+    <div class="jumbotron">Crystals Collector!</div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Game Instructions</div>
+              <div class="panel-body">
+                <p>You will be given a random number at the start of the game</p>
+                <br>
+                <p>There are four crystals below.  By clicking on a crystal you will add
+                a specific amount of points to your total score.</p>
+                <br>
+                <p>You win the game by matching your total score to the random number.
+                  You lose the game if your total score goes above the randome number.</p>
+                 <br>
+                <p>The value of each crystal is hidden from you until you click on it.</p>
+                <br>
+                <p>Each time the game starts, the values of each crystal will change.</p>
+                <br>
+                <p>Good Luck!</p>
+              </div>
+          </div>
+        </div>
+      </div> <!-- first row -->
+      <div class="row">
+        <div class="col-md-6">
+          <div class="panel panel-default">
+            <div class="panel-heading">Match this Random Number!</div>
+              <div class="panel-body">
+                <div id="random-number"></div>
+              </div>
+          </div>
+        </div><!-- end child column 1 -->
+        <div class="col-md-6">
+          <div class="panel panel-default">
+          <div class="panel-heading">Score</div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">Wins</div>
+                    <div class="panel-body">
+                      <div id="wins"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">Losses</div>
+                    <div class="panel-body">
+                      <div id="losses"></div>
+                    </div>
+                  </div>
+                </div><!-- end grnchld col -->
+              </div><!-- end child row -->
+            </div><!-- end child panel body -->
+            </div><!-- end child panel default -->
+          </div><!-- end second column -->
+        </div><!-- end second row -->
+      <div class="row">
+          <div class="col-md-3">
+            <div class="crystal"><img src="assets/images/red.png" class="img-thumbnail"></div>
+          </div>
+          <div class="col-md-3">
+            <div class="cyrstal"><img src="assets/images/blue.png"class="img-thumbnail"></div>
+          </div>
+          <div class="col-md-3">
+            <div class="cyrstal"><img src="assets/images/green.png"class="img-thumbnail"></div>
+          </div>
+          <div class="col-md-3">
+            <div class="cyrstal"><img src="assets/images/yellow.jpg"class="img-thumbnail"></div>
+          </div>
+        </div>
+      <div class="row">
+          <div class="col-md-12">
+            <div class="panel panel-default">
+              <div class="panel-heading">Your Total Score Is:</div>
+              <div class="panel-body">
+                <div id="finalScore"></div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div><!-- end container -->
+
+
+    <!-- script -->
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+  </body>
+</html>
