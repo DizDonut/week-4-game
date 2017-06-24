@@ -1,5 +1,8 @@
-.jumbotron{
-  text-align: center;
+body>img{
+  opacity: 0.3;
+  position: absolute;
+  height: 100%;
+  width: 100%;
 }
 
 .crystal{
@@ -11,4 +14,18 @@
 
 .crystal:hover{
   opacity: 1.0;
+}
+
+.panel-heading,.panel-body{
+  text-align: center;
+  font-family: 'Asul', sans-serif;
+}
+
+p{
+  text-align: justify;
+}
+
+.panel-default>.panel-heading{
+  background-color: #EBF5FB;
+
 }

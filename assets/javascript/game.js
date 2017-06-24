@@ -100,6 +100,7 @@ $("#document").ready(function(){
      }
      else {
        $("#generate-button").disabled = false;
+       $(".crystal").disabled = true;
      }
   };
 
